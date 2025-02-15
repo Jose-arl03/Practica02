@@ -1,0 +1,453 @@
+:root {
+    --main-color: #2d8cf0;
+    --hover-color: #1e78c8;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.like-btn {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.like-btn.liked {
+    color: #dc3545;
+}
+
+.post-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* Efectos y Estilos Nuevos */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://picsum.photos/1920/1080?random=0');
+    background-size: cover;
+    background-position: center;
+    margin-top: 56px; /* Compensar navbar fija */
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-overlay {
+    background: linear-gradient(transparent 60%, rgba(0,0,0,0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.btn-category {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-category:hover {
+    background: var(--main-color);
+    border-color: transparent;
+    transform: scale(1.05);
+}
+
+/* Layout Masonry */
+.row[data-masonry] {
+    margin-bottom: -1.5rem;
+}
+
+.col {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Estilos para la sección de login */
+.login-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://picsum.photos/1920/1080?random=13');
+    background-size: cover;
+    background-position: center;
+    margin-top: 56px; /* Compensar navbar fija */
+}
+
+/* Estilos para la tarjeta de login */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para los inputs */
+.input-group-text {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    padding-left: 0;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+/* Estilos para el botón de login */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los enlaces */
+.text-decoration-none {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.text-decoration-none:hover {
+    color: #0056b3;
+}
+
+/* Estilos para la sección de registro */
+.register-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://picsum.photos/1920/1080?random=14');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 56px); /* Restar altura del navbar */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Estilos para la tarjeta de registro */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar la tarjeta */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para los inputs */
+.input-group-text {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    padding-left: 0;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+/* Estilos para el botón de registro */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los enlaces */
+.text-decoration-none {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.text-decoration-none:hover {
+    color: #0056b3;
+}
+/* Estilos para la tarjeta de perfil */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para la foto de perfil */
+.rounded-circle {
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el overlay de las publicaciones */
+.card-img-overlay {
+    background: linear-gradient(transparent 60%, rgba(0,0,0,0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+/* Estilos para el contenido del overlay */
+.content-overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Estilos específicos para la página de Timeline */
+
+/* Contenedor principal */
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Título de la sección */
+main h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+/* Tarjetas de publicaciones */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de la publicación */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Título de la tarjeta (nombre del usuario) */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción de la publicación */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Efecto de carga suave para las publicaciones */
+.col {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.col.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para el botón de "Mi Perfil" en el navbar */
+.navbar .btn-outline-light {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Estilos para el fondo de la página */
+body.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+
+
+
+/* Estilos específicos para la página de Timeline */
+
+/* Contenedor principal */
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Título de la sección */
+main h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+/* Tarjetas de publicaciones */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de la publicación */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Título de la tarjeta (nombre del usuario) */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción de la publicación */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Efecto de carga suave para las publicaciones */
+.col {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.col.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para el botón de "Mi Perfil" en el navbar */
+.navbar .btn-outline-light {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Estilos para el fondo de la página */
+body.bg-light {
+    background-color: #f8f9fa !important;
+}

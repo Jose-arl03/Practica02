@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photogram - Descubre Momentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-camera-retro me-2"></i>Photogram
+            </a>
+            <div class="ms-auto">
+                <a href="login.html" class="btn btn-outline-light btn-lg">Unirse a la Comunidad</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section vh-100 d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">Donde las imágenes cobran vida</h1>
+            <p class="lead mb-5">Descubre miles de historias visuales de nuestra comunidad global</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-auto">
+                    <a href="#trending" class="btn btn-light btn-lg px-5">Explorar</a>
+                </div>
+                <div class="col-auto">
+                    <a href="register.html" class="btn btn-outline-light btn-lg px-5">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid de Fotografías -->
+    <main class="container-fluid px-4 py-5" id="trending">
+        <div class="row g-4" data-masonry='{"percentPosition": true}'>
+            <!-- Publicación 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/750?random=1" 
+                         class="card-img" 
+                         alt="Atardecer en Bali"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@viajeromundial</h5>
+                            <p class="text-white-50 mb-0">Atardecer en Bali 🌴</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">1.2k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/650?random=2" 
+                         class="card-img" 
+                         alt="Montañas Suizas"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@naturelover</h5>
+                            <p class="text-white-50 mb-0">Alpes suizos ❄️</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">2.4k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/800?random=3" 
+                         class="card-img" 
+                         alt="Desierto"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@adventure_seeker</h5>
+                            <p class="text-white-50 mb-0">Atacama infinito 🏜️</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/600?random=4" 
+                         class="card-img" 
+                         alt="Ciudad nocturna"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@urbanexplorer</h5>
+                            <p class="text-white-50 mb-0">Nueva York by night 🌃</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">3.1k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/700?random=5" 
+                         class="card-img" 
+                         alt="Cascada"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@waterfall_chaser</h5>
+                            <p class="text-white-50 mb-0">Cascada mágica 💦</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">1.8k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/550?random=6" 
+                         class="card-img" 
+                         alt="Aurora boreal"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@northernlights</h5>
+                            <p class="text-white-50 mb-0">Magia ártica 🌌</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">4.7k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/720?random=7" 
+                         class="card-img" 
+                         alt="Playa tropical"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@beachparadise</h5>
+                            <p class="text-white-50 mb-0">Paraíso caribeño 🏖️</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">2.9k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/680?random=8" 
+                         class="card-img" 
+                         alt="Selva tropical"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@jungleexplorer</h5>
+                            <p class="text-white-50 mb-0">Corazón de la selva 🌿</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">1.5k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/630?random=9" 
+                         class="card-img" 
+                         alt="Arquitectura moderna"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@modernarch</h5>
+                            <p class="text-white-50 mb-0">Diseño futurista 🏗️</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">980</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/710?random=10" 
+                         class="card-img" 
+                         alt="Gastronomía"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@foodiegram</h5>
+                            <p class="text-white-50 mb-0">Banquete italiano 🍝</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">3.6k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 11 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/670?random=11" 
+                         class="card-img" 
+                         alt="Arte callejero"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@streetart</h5>
+                            <p class="text-white-50 mb-0">Expresión urbana 🎨</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">2.2k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicación 12 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card hover-effect">
+                    <img src="https://picsum.photos/500/600?random=12" 
+                         class="card-img" 
+                         alt="Deportes extremos"
+                         loading="lazy">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <div class="content-overlay">
+                            <h5 class="text-white">@extremesports</h5>
+                            <p class="text-white-50 mb-0">Adrenalina pura 🪂</p>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-heart text-danger me-2"></i>
+                                <span class="text-white">1.7k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
